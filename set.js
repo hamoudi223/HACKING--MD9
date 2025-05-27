@@ -17,7 +17,7 @@ module.exports = {
     TELECHARGER_AUTO_STATUS: process.env.TELECHARGER_AUTO_STATUS || 'non',
     MODE: process.env.MODE_PUBLIC,
     PM_PERMIT: process.env.PM_PERMIT || 'non',
-    CODE_PAYS: process.env.CODE_PAYS || '509',
+    CODE_PAYS: process.env.CODE_PAYS || '223',
     BOT: process.env.NOM_BOT || 'Hacking_MD',
     URL: process.env.LIENS_MENU || 'https://static.animecorner.me/2023/08/op2.jpg',
     HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
@@ -32,9 +32,11 @@ module.exports = {
     DATABASE_URL,
     DATABASE:
         DATABASE_URL === databasePath
-            ? "postgresql://thomas_k3lw_user:ePmbhxsGM9beyLb2Y0thgJO6WqkQvHGD@dpg-cvoqc1ngi27c73at2fmg-a.oregon-postgres.render.com/thomas_k3lw"
+            ? "postgresql://neondb_owner:npg_P0NqknRwAl9S@ep-bitter-term-a5vafgtto-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require
+"
             : DATABASE_URL,
-    DB: process.env.DB || 'postgres://neoverse:pomrleUMXwlmlpIcW2oFJmMX0CXzaFkf@dpg-combonun7f5s73d7uoog-a.oregon-postgres.render.com/neoverse_wz98',
+    DB: process.env.DB || 'postgresql://neondb_owner:npg_P0NqknRwAl9S@ep-bitter-term-a5vafgtto-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require
+',
     
     /*sequelize: new Sequelize(DATABASE_URL, {
         dialect: DATABASE_URL === databasePath ? 'sqlite' : 'postgres',
